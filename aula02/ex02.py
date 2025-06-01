@@ -14,14 +14,20 @@ vetorUm = np.arange(1,20+1)
 matrizUm = vetorUm.reshape(5,4)
 
 matrizDois = np.random.randint(low=150,high=(170 + 1),size=(5,4))
-print(matrizUm)
-print(matrizDois)
+print(f'Matriz com números sequenciais inteiros:\n'
+      f'{matrizUm}\n')
+
+print(f'Matriz com números aleatórios inteiros:\n'
+      f'{matrizDois}\n')
 
 somarArray = matrizUm + matrizDois
-print(somarArray)
+print(f'Soma das matrizes anteriores:\n'
+      f'{somarArray}\n')
 
 multiplicarArray = matrizUm * 150
-print(multiplicarArray)
+print(f'Somando a matriz um pelo escalar 150:\n'
+      f'{multiplicarArray}\n')
 
-elevarArray = matrizDois ** 2
-print(elevarArray)
+elevarArray = matrizUm ** 2
+print(f'Quadrado da matriz um:\n'
+      f'{elevarArray}\n')
